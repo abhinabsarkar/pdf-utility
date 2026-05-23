@@ -2,40 +2,6 @@
 
 Simple command-line utility to merge and split PDF files via `main.py`.
 
-## Windows one-click installer (installs prerequisites + builds EXE)
-
-If you want an `.exe` for merge/split and automatic prerequisite setup:
-
-1. Open Command Prompt in the project folder.
-2. Run:
-
-```bat
-installer\install_and_build.bat
-```
-
-What this installer does:
-
-- Installs Python (via `winget`) if not already available.
-- Installs Python dependencies from `requirements.txt`.
-- Installs `pyinstaller`.
-- Builds `pdf-utility.exe` from `main.py`.
-
-Generated output files:
-
-- `installer-output\pdf-utility.exe`
-- `installer-output\merge-pdfs.bat`
-
-Quick merge using the generated launcher:
-
-```bat
-installer-output\merge-pdfs.bat merged.pdf file1.pdf file2.pdf file3.pdf
-```
-
-Direct merge using the generated EXE:
-
-```bat
-installer-output\pdf-utility.exe merge -o merged.pdf file1.pdf file2.pdf
-```
 ## Prerequisites
 
 - Python 3.13+ (or any compatible Python 3 version)
