@@ -70,7 +70,7 @@ py main.py split <input_file> <output_folder>
 Example:
 
 ```bash
-py main.py split "54911_997942_Hayat_Azfar.pdf" "split_output"
+py main.py split "doc1.pdf" "split_output"
 ```
 
 Output files are created like:
@@ -91,9 +91,9 @@ Example:
 
 ```bash
 py main.py merge -o "merged/output.pdf" \
-  "54911_997942_Hayat_Azfar.pdf" \
-  "54911_998992_Uba_Chima.pdf" \
-  "54911_999061_Khan_Talha.pdf"
+  "doc1.pdf" \
+  "doc2.pdf" \
+  "doc3.pdf"
 ```
 
 ## Notes
